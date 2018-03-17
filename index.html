@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Morse Code</title>
+</head>
+
+<body>
+
+
+    <h1>Morse Code Translater</h1>
+    <button onclick="howToUse()">Click for Instructions:</button>
+    <div id="instructions">
+        If you wish to send a message and talking is not the best option here is how you can use a morse code translator:
+        <ol>
+            <li>Type the message you wish to deliver into the box</li>
+            <li>Press translate</li>
+            <li>Look for the button that corresponds to your situation. Click your mouse based on the morse code that appears, so the screen flashes in sync with the code durations.</li>
+            <li>Note: dot = 1 sec, bar = 3 secs</li>
+        </ol>
+    </div>
+    <br>
+    <input id="input" placeholder="What Do You Want To Translate?"> </input>
+
+    <button class='Translate'>Translate</button>
+    <p id='output'></p>
+    <div id="flash">
+        <br>
+        <div class="color">
+            <button id="red" class="btn btn-danger">Emergency</button>
+            <br>
+            <button id="green" class="btn btn-success">Stranded </button>
+            <br>
+            <button id="blue" class="btn btn-primary">Medical</button>
+            <br>
+            <button id="gray" class="btn btn-secondary">Converse</button>
+            <br>
+        </div>
+    </div>
+
+</html>
